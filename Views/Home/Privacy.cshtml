@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container mt-4">
+    <!-- Header Panel -->
+    <div class="header-panel d-flex align-items-center mb-4" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);">
+        <h1>
+            <i class="bi bi-shield-lock-fill me-2"></i>Privacy Policy
+        </h1>
+    </div>
+
+    <!-- Content Card -->
+    <div class="card-panel">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <h5 class="text-primary fw-semibold mb-3">
+                    <i class="bi bi-info-circle me-2"></i>Information We Collect
+                </h5>
+                <p class="text-muted mb-4">
+                    We collect information that you provide directly to us when using the ContactsCRUD application.
+                    This includes contact details such as name, phone number, job title, and birth date.
+                    This data is stored locally in your SQLite database and is never transmitted to external servers.
+                </p>
+
+                <h5 class="text-primary fw-semibold mb-3">
+                    <i class="bi bi-gear me-2"></i>How We Use Your Information
+                </h5>
+                <p class="text-muted mb-4">
+                    The information you provide is used solely for the purpose of managing your contacts within this application.
+                    We do not share, sell, or distribute your data to third parties.
+                </p>
+
+                <h5 class="text-primary fw-semibold mb-3">
+                    <i class="bi bi-database me-2"></i>Data Storage
+                </h5>
+                <p class="text-muted mb-4">
+                    All contact data is stored locally on your device using SQLite — a self-contained, serverless database engine.
+                    No data leaves your machine unless you explicitly share it.
+                </p>
+
+                <h5 class="text-primary fw-semibold mb-3">
+                    <i class="bi bi-clock me-2"></i>Data Retention
+                </h5>
+                <p class="text-muted">
+                    Your data remains stored in the local database until you choose to delete individual contacts
+                    or remove the application entirely. You have full control over your data at all times.
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="bg-light rounded-4 p-4 text-center" style="border: 2px dashed #dee2e6;">
+                    <i class="bi bi-shield-check text-success" style="font-size: 4rem;"></i>
+                    <h6 class="fw-semibold mt-3 mb-1">Your Data, Your Control</h6>
+                    <p class="text-muted small mb-0">
+                        All data is stored locally.<br />
+                        No external servers involved.
+                    </p>
+                    <hr class="my-3 opacity-25" />
+                    <div class="d-flex justify-content-center gap-3 small text-muted">
+                        <span><i class="bi bi-database text-primary"></i> SQLite</span>
+                        <span><i class="bi bi-lock text-success"></i> Local</span>
+                        <span><i class="bi bi-incognito text-warning"></i> Private</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer note -->
+    <div class="text-center mt-4 mb-5">
+        <p class="text-muted small mb-0">
+            <i class="bi bi-clock-history me-1"></i>
+            Last updated: @DateTime.Now.ToString("MMMM yyyy")
+        </p>
+    </div>
+</div>
